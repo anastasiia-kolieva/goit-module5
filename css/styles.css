@@ -1,0 +1,261 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.visually-hidden {
+    /* Удаляем элемент из потока документа */
+    position: absolute;
+    /* Временное решение для неверно произносимого, размазанного текста */
+    white-space: nowrap;
+    /* Устанавливаем минимально возможный размер (некоторые скринридеры игнорируют элементы с нулевой высотой и шириной) */
+    width: 1px;
+    height: 1px;
+    /* Скрываем вылезающий за границы контент */
+    overflow: hidden;
+    /* Сбрасываем любые свойства, которые могут повлиять на размер элемента */
+    border: 0;
+    padding: 0;
+    /* Вырезаем ту часть контента, которая должна отображаться. */
+    /* Устаревшее свойство clip для старых браузеров */
+    clip: rect(0 0 0 0);
+    /* clip-path для новых браузеров. inset(50%) определяет область вставки, которая позволит контенту исчезнуть.  */
+    clip-path: inset(50%);
+    /* Похоже, никто до конца не понимает, почему тут margin: -1px. Кроме того, это приводит к проблемам (читай: https://github.com/h5bp/html5-boilerplate/issues/1985). */
+    margin: -1px;
+}
+
+/* HEADER */
+
+.header {
+    padding-top: 38px;
+    padding-bottom: 32px;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.logotype {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #555252;
+    text-transform: uppercase;
+    float: left;
+
+}
+
+.logotype::first-letter {
+    color: #1abc9c;
+    font-weight: 900;
+}
+
+.navigation_list {
+    float: right;
+    padding-top: 12px;
+}
+
+.navigation_list-item {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    float: left;
+}
+
+.navigation_list-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+
+.navigation_list-link {
+    color: #0f0101;
+}
+
+a:hover,
+.navigation_list-link :focus {
+    color: #1abc9c;
+}
+
+/* СЛАЙДЕР */
+
+/* <!-- Сделать кнопкипо бокам-слайдер--> */
+
+
+.slider {
+    position: relative;
+}
+
+.slider-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.slider-img::before {
+    content: " ";
+    display: block;
+    width: 1920px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+
+.slider-titile {
+    position: absolute;
+    left: 50%;
+    top: 205px;
+    transform: translate(-50%, -50%);
+}
+
+.slider-title-paris-tours {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    line-height: 82px;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    /* отступ 11 */
+}
+
+.tours-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 54px;
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    /* отступ 15 */
+}
+
+.slider-button {
+    position: absolute;
+}
+
+/* New collection */
+
+.new-collection {
+    background-color: #e9f0fd;
+    padding-top: 95px;
+    padding-bottom: 100px;
+}
+
+.new-collection-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 900;
+    color: #515151;
+    text-transform: uppercase;
+    text-align: center;
+    /* отступ 5 */
+
+}
+
+.new-collection-title::after {
+    content: " ";
+    display: block;
+    height: 7px;
+    width: 164px;
+    background-color: #1abc9c;
+    margin: 28px auto 80px;
+}
+
+.products-item {
+    float: left;
+}
+
+.products-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.product-name {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Roboto"sans-serif;
+    font-weight: 900;
+}
+
+.product-name :hover,
+.product-name :focus {
+    background-color: #1abc9c;
+}
+
+.title-name {
+    float: left;
+    width: 201px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 32px;
+    background-color: #323232;
+    padding-left: 14px;
+}
+
+.price {
+    float: right;
+    width: 54px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 32px;
+    background-color: #8c8c8c;
+    text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #323232;
+    height: 88px;
+}
+
+.footer-sign {
+    font-size: 16px;
+    line-height: 28px;
+    color: #fefefe;
+    font-family: "Open Sans"sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 36px;
+    padding-bottom: 30px;
+}
+
+.footer_link{
+    color: #fefefe;
+}
+
+.footer_link:hover,
+.footer_link :focus {
+    color: #1abc9c;
+}
