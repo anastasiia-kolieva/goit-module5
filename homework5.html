@@ -38,7 +38,7 @@
 
         <div class="slider">
             <div class="slider-img">
-                <img src="bg.jpg" alt="Фото девушки на прогулке" width="1920" height="700" />
+                <img src="bg.jpg" alt="Фото девушки на прогулке" width="1600" height="600" />
             </div>
 
             <div class="slider-titile">
@@ -47,11 +47,9 @@
                 <h3 class="tours-title">city tours / tour tickets / tour guides</h3>
             </div>
 
-            <div class="slider-button container">
-                <!-- тоже сделать позитион абсолют-->
-                <!-- доделать кнопки -->
-                <button></button>
-                <button></button>
+            <div class="slider-button container clearfix">
+                <button class="prev inactive-button"><span class="visually-hidden">prev button</span></button>
+                <button class="next"><span class="visually-hidden">next button</span></button>
             </div>
         </div>
 
@@ -62,46 +60,112 @@
                 <ul class="list-products container clearfix">
 
                     <li class="products-item">
-                        <a href="#">
+                        <div class="products-item-img">
                             <img src="./products/product1.jpg" alt="Фото мужчина в синей футболке" height="282"
                                 width="255" />
-                            <div class="product-name clearfix">
-                                <h3 class="title-name">blue tshirt</h3>
-                                <h3 class="price">$26</h3>
+                            <div class="overlay">
+                                <ul class="buttom-list clearfix">
+                                    <li class="buttom-list-item"> <a href="#"
+                                            class="buttom-list-link buttom-list-link_like"><span
+                                                class="visually-hidden">like</span></a></li>
+                                    <li class="buttom-list-item"> <a href="#"
+                                            class="buttom-list-link buttom-list-link_arrows"><span
+                                                class="visually-hidden">arrows</span></a></li>
+                                    <li class="buttom-list-item"> <a href="#"
+                                            class="buttom-list-link buttom-list-link_clock"><span
+                                                class="visually-hidden">clock</span></a></li>
+                                    <li class="buttom-list-item-long"> <a href="#"
+                                            class="buttom-list-link buttom-list-link_trolley"><span
+                                                class="add-to-card">add to card</span></a></li>
+                                </ul>
                             </div>
-                        </a>
+                        </div>
+
+
+                        <div class="product-name clearfix">
+                            <h3 class="title-name">blue tshirt</h3>
+                            <h3 class="price">$26</h3>
+                        </div>
                     </li>
 
                     <li class="products-item">
-                        <a href="#">
+                        <div class="products-item-img">
                             <img src="./products/product2.jpg" alt="Фото женщина в клетчатой рубашке" height="282"
                                 width="255" />
-                            <div class="product-name clearfix">
-                                <h3 class="title-name">woman shirt</h3>
-                                <h3 class="price">$31</h3>
+                            <div class="overlay">
+                                <ul class="buttom-list clearfix">
+                                    <li class="buttom-list-item"> <a href="#"
+                                            class="buttom-list-link buttom-list-link_like"><span
+                                                class="visually-hidden">like</span></a></li>
+                                    <li class="buttom-list-item"> <a href="#"
+                                            class="buttom-list-link buttom-list-link_arrows"><span
+                                                class="visually-hidden">arrows</span></a></li>
+                                    <li class="buttom-list-item"> <a href="#"
+                                            class="buttom-list-link buttom-list-link_clock"><span
+                                                class="visually-hidden">clock</span></a></li>
+                                    <li class="buttom-list-item-long"> <a href="#"
+                                            class="buttom-list-link buttom-list-link_trolley"><span
+                                                class="add-to-card">add to card</span></a></li>
+                                </ul>
                             </div>
-                        </a>
+                        </div>
+                        <div class="product-name clearfix">
+                            <h3 class="title-name">woman shirt</h3>
+                            <h3 class="price">$31</h3>
+                        </div>
                     </li>
 
                     <li class="products-item">
-                        <a href="#">
+                        <div class="products-item-img">
                             <img src="./products/product3.jpg" alt="Фото мужчина в желтой футболке" height="282"
                                 width="255" />
-                            <div class="product-name clearfix">
-                                <h3 class="title-name">yellow tshirt</h3>
-                                <h3 class="price">$21</h3>
+                            <div class="overlay">
+                                <ul class="buttom-list clearfix">
+                                    <li class="buttom-list-item"> <a href="#"
+                                            class="buttom-list-link buttom-list-link_like"><span
+                                                class="visually-hidden">like</span></a></li>
+                                    <li class="buttom-list-item"> <a href="#"
+                                            class="buttom-list-link buttom-list-link_arrows"><span
+                                                class="visually-hidden">arrows</span></a></li>
+                                    <li class="buttom-list-item"> <a href="#"
+                                            class="buttom-list-link buttom-list-link_clock"><span
+                                                class="visually-hidden">clock</span></a></li>
+                                    <li class="buttom-list-item-long"> <a href="#"
+                                            class="buttom-list-link buttom-list-link_trolley"><span
+                                                class="add-to-card">add to card</span></a></li>
+                                </ul>
                             </div>
-                        </a>
+                        </div>
+                        <div class="product-name clearfix">
+                            <h3 class="title-name">yellow tshirt</h3>
+                            <h3 class="price">$21</h3>
+                        </div>
                     </li>
 
                     <li class="products-item">
-                        <a href="#">
+                        <div class="products-item-img">
                             <img src="./products/product4.jpg" alt="Фото в купальнике" height="282" width="255" />
-                            <div class="product-name clearfix">
-                                <h3 class="title-name">cool lingerie</h3>
-                                <h3 class="price">$56</h3>
+                            <div class="overlay">
+                                <ul class="buttom-list clearfix">
+                                    <li class="buttom-list-item"> <a href="#"
+                                            class="buttom-list-link buttom-list-link_like"><span
+                                                class="visually-hidden">like</span></a></li>
+                                    <li class="buttom-list-item"> <a href="#"
+                                            class="buttom-list-link buttom-list-link_arrows"><span
+                                                class="visually-hidden">arrows</span></a></li>
+                                    <li class="buttom-list-item"> <a href="#"
+                                            class="buttom-list-link buttom-list-link_clock"><span
+                                                class="visually-hidden">clock</span></a></li>
+                                    <li class="buttom-list-item-long"> <a href="#"
+                                            class="buttom-list-link buttom-list-link_trolley"><span
+                                                class="add-to-card">add to card</span></a></li>
+                                </ul>
                             </div>
-                        </a>
+                        </div>
+                        <div class="product-name clearfix">
+                            <h3 class="title-name">cool lingerie</h3>
+                            <h3 class="price">$56</h3>
+                        </div>
                     </li>
                 </ul>
 
